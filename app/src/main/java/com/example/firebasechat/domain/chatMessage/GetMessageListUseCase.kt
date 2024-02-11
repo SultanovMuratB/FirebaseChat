@@ -1,9 +1,9 @@
-package com.example.firebasechat.domain
+package com.example.firebasechat.domain.chatMessage
 
 import androidx.lifecycle.LiveData
 import com.example.firebasechat.ChatMessage
 
-class GetMessageListUseCase(private val chatMessageListRepository: ChatMessageListRepository) {
+internal class GetMessageListUseCase(private val chatMessageListRepository: ChatMessageListRepository) {
 
     fun getMessageList(uid: String): LiveData<List<ChatMessage>> {
         return chatMessageListRepository.getMessageFromFirebase(uid)

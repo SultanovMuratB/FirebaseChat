@@ -3,14 +3,14 @@ package com.example.firebasechat.data
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.firebasechat.ChatMessage
-import com.example.firebasechat.domain.ChatMessageListRepository
+import com.example.firebasechat.domain.chatMessage.ChatMessageListRepository
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-object ChatMessageListRepositoryImpl : ChatMessageListRepository {
+internal object ChatMessageListRepositoryImpl : ChatMessageListRepository {
 
     private val chatMessageLD = MutableLiveData<List<ChatMessage>>()
     private val chatMessageList = mutableListOf<ChatMessage>()

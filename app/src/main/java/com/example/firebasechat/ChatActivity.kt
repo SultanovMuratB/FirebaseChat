@@ -6,9 +6,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.firebasechat.data.ChatMessageListRepositoryImpl
-import com.example.firebasechat.domain.GetMessageListUseCase
+import com.example.firebasechat.domain.chatMessage.GetMessageListUseCase
 import com.example.firebasechat.databinding.ActivityChatBinding
-import com.example.firebasechat.domain.AddMessageInFirebaseDatabase
+import com.example.firebasechat.domain.chatMessage.AddMessageInFirebaseDatabase
 
 class ChatActivity : AppCompatActivity() {
 

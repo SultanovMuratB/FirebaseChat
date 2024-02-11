@@ -1,6 +1,6 @@
-package com.example.firebasechat.domain
+package com.example.firebasechat.domain.chatMessage
 
-class AddMessageInFirebaseDatabase(
+internal class AddMessageInFirebaseDatabase(
     private val chatMessageListRepository: ChatMessageListRepository
 ) {
 
